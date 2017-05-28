@@ -1,6 +1,6 @@
 {
   "name": "@savvy-css/text-utilities",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Text utilities for Savvy CSS.",
   "main": "build/text-utilities.css",
   "style": "build/text-utilities.css",
