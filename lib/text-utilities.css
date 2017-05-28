@@ -1,1 +1,60 @@
 /* @define text-utilities */
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+
+.u-text-break { word-wrap: break-word !important; }
+
+
+/**
+ * Horizontal text alignment
+ */
+
+.u-text-left { text-align: left !important; }
+.u-text-right { text-align: right !important; }
+.u-text-center { text-align: center !important; }
+
+
+/**
+ * Prevent whitespace wrapping
+ */
+
+.u-text-nowrap { white-space: nowrap !important; }
+
+
+/**
+ * Text truncation with an ellipsis.
+ *
+ * Prevent text from wrapping onto multiple lines by truncating
+ * overflowing text with an ellipsis.
+ *
+ * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow
+ */
+
+.u-text-truncate {
+  max-width: 100% !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  word-wrap: normal !important;
+}
+
+
+/**
+ * Text truncation with clipping.
+ *
+ * Prevent text from wrapping onto multiple lines by truncating
+ * overflowing text with a hard clip.
+ *
+ * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow
+ */
+
+.u-text-clip {
+  max-width: 100% !important;
+  text-overflow: clip !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
